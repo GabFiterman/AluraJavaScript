@@ -1,0 +1,94 @@
+
+.titulo{
+    text-align: center;
+    padding: 5% 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.entradaInformacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inputText{
+    padding: 2% 2% 2% 5%;
+    font-size: 1.2rem;
+    border-radius: 2em;
+    border: none;
+    margin: auto;
+    margin-bottom: 5%;
+    width: 50%;
+    background-color: var(--secundaria);
+    transition: 0.5s;
+}
+
+.inputText:hover{
+    background-color: #ffffff;
+}
+
+.btnGrupo{
+    display: flex;
+    width: 55%;
+    justify-content: space-around;
+}
+
+.btnEntrar{
+    background-color: var(--primaria);
+    border: none;
+    border-radius: 2em;
+    color: var(--background);
+    text-align: center;
+    transition: 0.3s;
+    flex-grow: 6;
+    margin-right: 6rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.btnEntrar:hover{
+    background-color: var(--primariaAtiva);
+    color: var(--secundaria);
+    cursor: pointer;    
+}
+
+.btnLimpa{
+    color: var(--background);
+    background-color: var(--secundaria);
+    text-align: center;
+    border-radius: 2em;
+    border: none;
+    transition: 0.3s;
+    flex-grow: 2;
+    font-size: 1rem;
+}
+
+.btnLimpa:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.nomeInserido{
+    text-align: center;
+    font-size: 1.8em;
+    margin: 5% 0;
+}
+
+@media(max-width: 768px){
+    .inputText{
+        width: 80%;
+        font-size: 1rem;
+    }
+    .btnGrupo{
+        width: 85%;
+    }
+    .btnEntrar{
+        padding: 0.5rem;
+        margin-right: 1rem;
+        width: 75%;
+    }
+    .btnLimpa{
+        width: 25%;
+    }
+}
