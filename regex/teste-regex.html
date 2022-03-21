@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teste-RegEx</title>
+</head>
+
+<body>
+    <div id="patternTest"></div>
+
+    <script>
+
+            //exemplo regex simples
+            /*
+            var alvo = '11a22b33c';
+            var exp = /(\d\d)(\w)/g;
+            var resultado = null;
+
+            while (resultado = exp.exec(alvo)) {
+                console.log(resultado);
+                console.log(`Last Index: ${exp.lastIndex}`)
+            }
+            */
+
+
+            //exemplo com método REPLACE
+            /*
+            var anoMesDia = '2007-12-31';
+            console.log(`Data: ${anoMesDia}`);
+
+            var exp = /-/g
+
+            anoMesDia = anoMesDia.replace(exp, '/');
+            console.log(`Data: ${anoMesDia}`);
+            */
+
+            //exemplo com método SPLIT
+            /*
+            var arquivo = '100,200-150,200;20';
+
+            var valores = arquivo.split(',');
+            console.log(valores);
+
+            var exp = /[,;-]/;
+            var valores = arquivo.split(exp);
+            console.log(valores);
+            */
+
+            //exemplo com método MATCH
+            /*
+            var codigos = 'A121B12112C12212F12G01';
+            var exp = /[A-Za-z]\d+/g
+            var codigosExtraidos = codigos.match(exp);
+            console.log(codigosExtraidos);
+            */
+
+            //forumlário que aceita apenas números
+            
+            const patternTest = document.querySelector('#patternTest');
+            patternTest.innerHTML = `
+            <form>
+                <input pattern="[0-9]*">
+                <input type="submit" value="Enviar dados">
+            </form>
+            `;
+            
+    </script>
+</body>
+
+</html>

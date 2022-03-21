@@ -1,0 +1,35 @@
+*** Quantifier ***
+?       - zero ou uma vez.
+*       - zero ou mais vezes.
++       - uma ou mais vezes.
+{n}     - exatamente n vezes.
+{n,}    - no mínimo n vezes.
+{n,m}   - no mínimo n vezes, no máximo m vezes.
+
+
+*** Classes de char - [] ***
+[A-Z]   - letras de A até Z
+[123]   - 1,2 ou 3
+\d      - todos os dígitos  [0-9]
+\s      - whitespace    [ \t\r\n\f]
+\w      - wordchar [A-Za-z0-9_]
+
+
+*** Âncoras ***
+\b  - word bundary
+^   - início do alvo
+$   - fim do alvo
+
+
+*** Grupos ***
+(\w+)   - grupo de wordchars
+(\w+)?  - grupo de caracteres opcionais
+(?:\w+) - non-capturing group
+
+
+*** Exemplos ***
+mês                 -   [A-Z][a-zç]{3,8} 
+dia                 -   [1-3]?\d
+3 dígitos           -   \d{3}
+um ou + whitespaces -   \s+
+validação de email  -   ^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$
